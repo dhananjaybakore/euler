@@ -14,10 +14,10 @@ public class Problem7 {
     public static void main(String[] args){
 
         long startTime = System.nanoTime();
-        List<Long> primes = new ArrayList<Long>();
+        List<Long> primes = new ArrayList<>();
         primes.add(2L);
         Integer primeCounter = 1;
-        Integer n = 10002;
+        //Integer n = 10002;
         for (long i=3; i<=Math.sqrt(UPPERLIMIT); i+=JUMP){
             //For each Segment, returns false once the Nth Prime number is found.
             if(!runSegments(i, i+JUMP, primes)){
